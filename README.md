@@ -11,18 +11,16 @@ Python implementation from scratch inspired by paper [Wang et al. (2006)](https:
 ---
 
 ## Introduction
-While recommendation systems have been a hot topic for a long time now due to its success in business applications, it is still facing substantial challenges. As grocery shopping is most often considered as a real drudgery, many online stores provide a shopping recommendation system for their customers to facilitate this purchase process. However, there is still a large majority of people who still hesitate from doing their groceries online even though this form of shopping provides consumers with distinct advantages. Hence, the chasm between online retail and its brick-and-mortar counterpart keeps expanding in numbers, and people’s shopping preferences are evolving in turn, leaving retailers with little choice but to adapt.  
+Time-series analysis allows us to predict future values based on historical observed values, but they can only do so to the point where the model is able to differentiate between seasonal fluctuations within the univariate time-series dataset. So far, many papers consider relatively simple seasonal patterns such as weekly and monthly effects. However, higher frequency time-series often exhibit more complicated seasonal patterns. An alternative to using dummy variables, especially for multiple complex seasonal patterns, is to use Fourier terms. Using linear combinations of sine and cosine functions, successive Fourier terms represents the harmonics of the multiple seasonality components, and thus can be added as explanatory regressors to the forecasting models.
 
-This has led to online grocery shopping becoming more and more prominent, and therefore resulted in radical adjustments within the marketing decision framework of many retailers. Thus, we investigate whether traditional collaborative filtering techniques are applicable in the domain of grocery shopping, and further improve its recommendations using more advanced models and machine learning techniques. Hence, various CF-based models have been constructed including your traditional similarity-based collaborative filtering models, a basket-sensitive random walk model, and a basket-sensitive factorization machine. Here, we found that our basket-sensitive factorization machine comes out on top when it comes to recommending less popular items. However, due to its computational time, it remains to be a question whether this model is applicable in practical use.
-
-
-Time series analysis allows us to predict future values based on previously observed values, but theycan only do so to the point where the model is able to differentiate between seasonal fluctuationswithin the data.  So far, we have considered relatively simple seasonal patterns such as weekly andmonthly effects.  However, higher frequency time series often exhibit more complicated seasonal pat-terns.  An alternative to using dummy variables, especially for multiple complex seasonal patterns,is to use Fourier terms (Shu, Hung, Nguyen, Hsu, & Lu, 2014).  Using linear combinations of sineand cosine functions, successive Fourier terms represent the harmonics of the multiple seasonalitycomponents, and thus can be added as explanatory regressors to the prediction models.  First, asimple ARMA model is fitted on the data using the aforementioned explanatory variables.  Thenthe harmonic function is defined as follows
-
-
+While traditional Fourier term analysis is able to capture the pattern of an univariate time-series relatively well, it tends to overestimate for day-of-the-week, monthly, and other known events that are self-evident without requiring extensive analysis. Hence, we suggest residual modified Fourier terms obtained from the residuals of ARIMA, allowing us to redirect our focus on capturing the more complex hidden patterns. On top of that, we propose a Subsequence Time series Clustering framework to enforce the forecasting models to adjust their parameters according to the clustered seasonal time windows, bringing the complex seasonality model to another level. That is, by incorporating advanced statistical operations and defining more complex characteristics of the univariate time-series such as non-linearity, self-similarity, and chaos on top of the decomposed time-series (trend, seasonality, noise), allows us to further refine and improve the forecasting accuracy using a fully data-driven framework.
 
 ## Colab Notebook
 
-Basket-Sensitive Random Walk & Factorization Machine Recommendation for Grocery Shopping in R:<br/>
+STS Clustering based on Hierarchical Clustering:<br/>
+[Google Colab]() | [Code]()
+
+STS Clustering based on Self-Organizing Maps (SOM):<br/>
 [Google Colab]() | [Code]()
 
 ## Prerequisites
