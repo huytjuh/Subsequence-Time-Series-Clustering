@@ -15,6 +15,11 @@ While recommendation systems have been a hot topic for a long time now due to it
 
 This has led to online grocery shopping becoming more and more prominent, and therefore resulted in radical adjustments within the marketing decision framework of many retailers. Thus, we investigate whether traditional collaborative filtering techniques are applicable in the domain of grocery shopping, and further improve its recommendations using more advanced models and machine learning techniques. Hence, various CF-based models have been constructed including your traditional similarity-based collaborative filtering models, a basket-sensitive random walk model, and a basket-sensitive factorization machine. Here, we found that our basket-sensitive factorization machine comes out on top when it comes to recommending less popular items. However, due to its computational time, it remains to be a question whether this model is applicable in practical use.
 
+
+Time series analysis allows us to predict future values based on previously observed values, but theycan only do so to the point where the model is able to differentiate between seasonal fluctuationswithin the data.  So far, we have considered relatively simple seasonal patterns such as weekly andmonthly effects.  However, higher frequency time series often exhibit more complicated seasonal pat-terns.  An alternative to using dummy variables, especially for multiple complex seasonal patterns,is to use Fourier terms (Shu, Hung, Nguyen, Hsu, & Lu, 2014).  Using linear combinations of sineand cosine functions, successive Fourier terms represent the harmonics of the multiple seasonalitycomponents, and thus can be added as explanatory regressors to the prediction models.  First, asimple ARMA model is fitted on the data using the aforementioned explanatory variables.  Thenthe harmonic function is defined as follows
+
+
+
 ## Colab Notebook
 
 Basket-Sensitive Random Walk & Factorization Machine Recommendation for Grocery Shopping in R:<br/>
