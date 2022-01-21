@@ -25,7 +25,10 @@ STS Clustering based on Self-Organizing Maps (SOM):<br/>
 
 ## Prerequisites
 * Linux or macOS
-* Rstudio 
+* python 3.8
+* nolds 0.5.2
+* pmarima 1.8.4
+* bayesian-optimization 1.2.0
 * CPU or NVIDIA GPU + CUDA CuDNN
 
 ## Getting Started
@@ -33,27 +36,23 @@ STS Clustering based on Self-Organizing Maps (SOM):<br/>
 ### Installation
 * Clone this repository.
 ```
-git clone https://github.com/huytjuh/Recommender-System-Basket-Analysis
-cd Recommender-System-Basket-Analysis
+git clone https://github.com/huytjuh/Subsequence-Time-Series-Clustering
+cd Subsequence-Time-Series-Clustering
 ```
-* Install R dependencies using `requirements.txt`.
+* Install Python dependencies using `requirements.txt`.
 ```
-#!./scripts/install_pkgs.sh
-while IFS=" " read -r package version; 
-do 
-  Rscript -e "devtools::install_version('"$package"', version='"$version"')"; 
-done < "requirements.txt"
+pip install -r requirements.txt
 ```
 
 ### Run Recommender System
-* Download a Basket Grocery dataset:
+* Download an univariate time-series dataset:
 ```
-datasets/ta_feng_all_months_merged.csv
+datasets/station_case.csv
 ```
-* Train Recommender System & Calculate Similariy Scores
+* Train STS Clustering 
 ```
 #!./scripts/run_train.sh
-Rscript train.R
+python3 
 ```
 * Test Recommender System
 ```
