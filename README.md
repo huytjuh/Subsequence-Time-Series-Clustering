@@ -2,12 +2,11 @@
 ![](https://i.ytimg.com/vi/wqQKFu41FIw/maxresdefault.jpg)
 ![](https://img.shields.io/github/license/huytjuh/Recommender-System-Basket-Analysis) ![](https://img.shields.io/maintenance/no/2019)
 
-Basket-Sensitive Random Walk & Factorization Machine Recommendations for Grocery Shopping. 
-Item-based Collaborative Filtering (CF) using hybrid memory- and model-based methods with Factorization Machines and Alternative Least Squares.
+Subsequence Time Series (STS) Clustering model for discovering hidden patterns and complex seasonality within univariate time-series datasets by clustering similar groups of time windows based on their structural characteristics with advanced statistics.
 
-R implementation from scratch inspired by paper [Li et al (2009)](https://www.researchgate.net/profile/Paulo-Lisboa/publication/221653590_Grocery_shopping_recommendations_based_on_basket-sensitive_random_walk/links/09e4150cb9fb091a30000000/Grocery-shopping-recommendations-based-on-basket-sensitive-random-walk.pdf).
+Python implementation from scratch inspired by paper [Wang et al. (2006)](https://link.springer.com/content/pdf/10.1007/s10618-005-0039-x.pdf)
 
-***Version: 1.0 (2019)*** 
+***Version: 2.1 (2021)*** 
 
 ---
 
