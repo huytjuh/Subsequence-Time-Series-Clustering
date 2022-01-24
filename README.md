@@ -49,15 +49,15 @@ pip install -r requirements.txt
 ```
 datasets/station_case.csv
 ```
-* Train STS Clustering 
+* Train STS Clustering (default: Hierarchical Clustering)
 ```
 #!./scripts/run_train.sh
-python3 train.py
+python3 train.py --cluster_method hierarchical
 ```
-* Test STS Clustering on ARIMA forecasting model
+* Test STS Clustering ARIMA forecasting model (default: Hierarchical Clustering)
 ```
 #!./scripts/run_main.sh
-pyton3 main.py --model ARIMA
+pyton3 main.py --cluster_method hierarchical --forecast ARIMA
 ```
 
 ## Algorithms
