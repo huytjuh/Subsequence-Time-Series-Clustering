@@ -95,6 +95,8 @@ A comparison between seasonal self-evident explanatory variables that fall under
 | 12-month | Hierarchical | -9.53% | -33.80% | 0.92% | 5.07% | 5.89% |
 | 12-month | SOM | -2.56% | -18.45% | 1.91% | 4.25% | 4.71% |
 
+***Note.*** The value represents the relative improvement in RMSE when the respective STS Clustering is incorporated compared to the naive method of adding seasonal component as explanatory variables. The respective values are a mean RMSE estimate of over 100 univariate time-series.
+
 ## Reference Papers
 
 * Wang, X., Smith, K., & Hyndman, R. (2006). Characteristic-based clustering for time series data. Data mining and knowledge Discovery, 13(3), 335-364. Available online: [Link](https://link.springer.com/content/pdf/10.1007/s10618-005-0039-x.pdf)
