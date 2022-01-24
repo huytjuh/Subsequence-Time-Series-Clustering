@@ -87,7 +87,7 @@ To further improve the forecasting performances, STS Clustering is used on the g
 ## Test Results & Performances
 A comparison between seasonal self-evident explanatory variables that fall under the naive methods and STS clustering methods that fall under the more complex methods. We run the evaluation on five different forecasting models, namely ARIMA, RF, LSTM, Hybrid ARIMA-RF, and Hybrid ARIMA-LSTM. Additionally, we provide a [Notebook]() to illustrate how the different algorithms could be evaluated and compared.
 |  |  | ARIMA | RF | LSTM | ARIMA-RF | ARIMA-LSTM |
-|---|---|---|---|---|---|---|
+|---|---|---:|---:|---:|---:|---:|
 | 1-month | Hierarchical | -12.06% | 26.34% | 3.14% | 7.20% | -3.82% |
 | 1-month | SOM | -3.28% | 27.10% | 27.33% | 9.26% | -1.80% |
 | 5-month | Hierarchical | -4.03% | -8.94% | 3.32% | 6.65% | 11.90% |
