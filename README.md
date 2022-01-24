@@ -105,9 +105,6 @@ A comparison between seasonal self-evident explanatory variables that fall under
 
 ## Reference Papers
 
-* Li, M., Dias, B. M., Jarman, I., El-Deredy, W., & Lisboa, P. J. (2009, June). Grocery shopping recommendations based on basket-sensitive random walk. In Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 1215-1224).\
-Available online: [Link](https://www.researchgate.net/profile/Paulo-Lisboa/publication/221653590_Grocery_shopping_recommendations_based_on_basket-sensitive_random_walk/links/09e4150cb9fb091a30000000/Grocery-shopping-recommendations-based-on-basket-sensitive-random-walk.pdf)
-* Le, D. T., Lauw, H. W., & Fang, Y. (2017). Basket-sensitive personalized item recommendation. IJCAI.\
-Available online: [Link](http://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=4767&context=sis_research)
-
+* Wang, X., Smith, K., & Hyndman, R. (2006). Characteristic-based clustering for time series data. Data mining and knowledge Discovery, 13(3), 335-364.
+Available online: [Link](https://link.springer.com/content/pdf/10.1007/s10618-005-0039-x.pdf)
 
