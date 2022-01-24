@@ -74,7 +74,7 @@ The table below lists the recommender algorithms currently available in the repo
 | Basket-Sensitive Random Walk<br /> (BSRW) | Hybrid                                 | A stochastic process dictating the likelihood of jumping from one item to another as extension to further explore transitive associations by incorporating the current shopping context into the Collaborative Filtering models.  | [Code]() |
 
 ## Test Results & Performances
-A comparison between different Recommender System algorithms which can be categorized into three types of models: similarity-based CF methods, BSRW-based methods, and model-based methods. We run the comparison on three different evaluation metrics: Binary Hit Rates on least three popular items *bHR(pop)* and three randomly selected items *bHR(rnd)*, and Weighted Hit Rate based on leave-one-out cross-validation *wHR(loo)*. Additionally, we provide a [Notebook]() to illustrate how the different algorithms could be evaluated and compared.
+A comparison between seasonal self-evident explanatory variables that fall under the naive methods and STS clustering methods that fall under the more complex methods. We run the evaluation on five different forecasting models, namely ARIMA, RF, LSTM, Hybrid ARIMA-RF, and Hybrid ARIMA-LSTM. Additionally, we provide a [Notebook]() to illustrate how the different algorithms could be evaluated and compared.
 
 | <br /> Algorithm | L-3-O<br /> bHR(pop) | L-3-O<br /> bHR(rnd) | L-1-O<br /> wHR(loo) |
 |---|:---:|:---:|:---:|
@@ -90,6 +90,11 @@ A comparison between different Recommender System algorithms which can be catego
 | Hybrid | 15.28 | 26.36 | 4.32 |
 
 *A subset of 10% of the testing had to be taken instead due to its computational heavy nature of Factorization Machine
+
+
+%Then, it is important to illustrate the added value of the explanatory variables an clustering methods. Do these additions actually improve forecasting performance? Keeping in mind that adding explanatory variables falls under the more simple methods, along with the random walk, and the clustering methods fall under the more complex methods. Once we have established that including both clustering and the explanatory variables is advantageous for predicting TV ratings, possibly by stating the average increase in RMSE or the fact that it increased in all cases, we can start actually discussing the results.
+Investigating the possible added value of including the explanatory variables and clustering methods in improving the forecasting performance of the models, the results in Table \ref{tab: Added value} show that the baseline model is never the best variation for all of the models and any of the forecasting horizons. We had expected the explanatory variables to have added value, however this was not the case for the clustering method due to the ongoing debate in the recent literature. Even though, as can be seen in the table, there is no consensus on a single model variation for the models or the forecasting horizons, the majority of the models has the lowest average RMSE when including explanatory variables and clustering, where the remainder of models supports adding only the explanatory variables. However, as the support is far from unanimous and the differences are small, we have decided to not limit ourselves to using only this single model variation in the next step of preliminary results. More importantly, based on these results, on average we are able to beat the random walk for short term forecasting. 
+
 
 ## Reference Papers
 
