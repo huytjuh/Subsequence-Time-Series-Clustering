@@ -52,16 +52,17 @@ datasets/station_case.csv
 * Train STS Clustering 
 ```
 #!./scripts/run_train.sh
-python3 
+python3 train.py
 ```
-* Test Recommender System
+* Test STS Clustering on ARIMA forecasting model
 ```
-#!./scripts/run_train.sh
-Rscript main.R
+#!./scripts/run_main.sh
+pyton3 main.py --model ARIMA
 ```
 
 ## Algorithms
-The table below lists the recommender algorithms currently available in the repository. Python scripts are linked under the Code column, explaining in detail the math and implementation of the algorithm including comments and documentations.
+The table below lists the global measures describing the univariate time-series obtained using advanced statistical operations that best capture the underlying characteristics of the given time horizon. The following global characteristics are measured and scaled normally: Trend, Seasonality, Periodicity, Serial Correlation, Skewness, Kurtosis, Non-Linearity, Self-Similarity, and Chaos. References and formulas are linked in the Reference column, explaining in detail the math and implementation of the statistics.
+
 
 | Algorithms                                | Type                                   | Description                                                                                                                                                                                                                       | Code |
 |-------------------------------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
