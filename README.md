@@ -86,22 +86,14 @@ To further improve the forecasting performances, STS Clustering is used on the g
 
 ## Test Results & Performances
 A comparison between seasonal self-evident explanatory variables that fall under the naive methods and STS clustering methods that fall under the more complex methods. We run the evaluation on five different forecasting models, namely ARIMA, RF, LSTM, Hybrid ARIMA-RF, and Hybrid ARIMA-LSTM. Additionally, we provide a [Notebook]() to illustrate how the different algorithms could be evaluated and compared.
-
-| <br /> Algorithm | L-3-O<br /> bHR(pop) | L-3-O<br /> bHR(rnd) | L-1-O<br /> wHR(loo) |
-|---|:---:|:---:|:---:|
-| pop | 0.43 | 16.80 | 2.83 |
-| CF(cos) | 16.72 | 31.62 | 5.65 |
-| CF(cp) | 16.46 | 30.84 | 5.67 |
-| CF(bn) | 16.75 | 31.88 | 5.79 |
-| CF(cos) + BSRW | 16.63 | 31.70 | 5.67 |
-| CF(cp) + BSRW | 16.46 | 30.80 | 5.71 |
-| CF(bn) + BSRW | 16.75 | 31.84 | 5.78 |
-| ALS | 15.28 | 26.28 | 4.34 |
-| BFSM* | 20.17 | 19.21 | 2.25 |
-| Hybrid | 15.28 | 26.36 | 4.32 |
-
-
-
+|  |  | ARIMA | RF | LSTM | ARIMA-RF | ARIMA-LSTM |
+|---|---|---|---|---|---|---|
+| 1-month | Hierarchical | -12.06% | 26.34% | 3.14% | 7.20% | -3.82% |
+| 1-month | SOM | -3.28% | 27.10% | 27.33% | 9.26% | -1.80% |
+| 5-month | Hierarchical | -4.03% | -8.94% | 3.32% | 6.65% | 11.90% |
+| 5-month | SOM | -0.67% | -8.74% | -2.60% | 6.37% | 10.52% |
+| 12-month | Hierarchical | -9.53% | -33.80% | 0.92% | 5.07% | 5.89% |
+| 12-month | SOM | -2.56% | -18.45% | 1.91% | 4.25% | 4.71% |
 
 ## Reference Papers
 
