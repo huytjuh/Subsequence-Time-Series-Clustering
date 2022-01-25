@@ -44,7 +44,7 @@ cd Subsequence-Time-Series-Clustering
 pip install -r requirements.txt
 ```
 
-### Run Recommender System
+### Run Subsequence Time Series Clustering
 * Download an univariate time-series dataset:
 ```
 datasets/station_case.csv
