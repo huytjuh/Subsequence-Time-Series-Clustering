@@ -1,4 +1,4 @@
 nolds 0.5.2
 pmarima 1.8.4
 bayesian-optimization 1.2.0
-lightgbm
+lightgbm 3.3.2
