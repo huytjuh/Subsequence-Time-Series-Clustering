@@ -105,3 +105,4 @@ A comparison between seasonal self-evident explanatory variables that fall under
 
 * Wang, X., Smith, K., & Hyndman, R. (2006). Characteristic-based clustering for time series data. Data mining and knowledge Discovery, 13(3), 335-364. Available online: [Link](https://link.springer.com/content/pdf/10.1007/s10618-005-0039-x.pdf)
 
+.
